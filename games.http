@@ -1,0 +1,30 @@
+# This is from the REST client 
+GET http://localhost:5074/games
+
+###`
+GET http://localhost:5074/games/1
+
+### 
+POST http://localhost:5074/games
+Content-Type: application/json
+
+{ 
+    "name":"Minecraft",
+    "genreId": 4,
+    "price": 19.99,
+    "releaseDate":"2011-11-18"
+}
+
+### 
+PUT http://localhost:5074/games/1
+Content-Type: application/json
+
+{
+    "name": "Street Fighter II Turbo",
+    "genre": "Fighting",
+    "price": 9.99,
+    "releaseDate": "1992-07-15"
+}
+
+###
+DELETE http://localhost:5074/games/2
